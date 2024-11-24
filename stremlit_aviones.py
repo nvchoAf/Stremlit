@@ -12,8 +12,6 @@ import plotly.express as px
 import numpy as np
 import pandas as pd
 
-%%writefile app.py
-import streamlit as st
 # Agregar titulo, encabezado y texto en la barra lateral
 st.sidebar.title('Mi primera barra lateral de Streamlit')
 st.sidebar.header('Hola, Barra lateral')
