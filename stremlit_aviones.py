@@ -7,7 +7,32 @@ Original file is located at
     https://colab.research.google.com/drive/1woQmfP8of-9Sq2F73uKWzjn_MX8o7yOI
 """
 
-# prompt: creame un stremlit que pueda mostrar mi base de datos
+
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 pf = pd.read_csv('STRIKE_REPORTS.csv')
 pf
+
+
+
+# Datos
+st.write('Esto es una tabla, se escfribe a partir de un DF: ')
+st.write(pd.DataFrame({
+    'Columna 1': ['A', 'B', 'C', 'D'],
+    'Columna 2': ['1', '2', '3', '4']
+}))
+# Grafico
+st.write('Aqui hay un grafico: ')
+st.line_chart({'data': [1, 5, 2, 6, 2, 1]})
+
+# Mapa
+st.write( 'Aqui hay un mapa: ')
+df = pd.DataFrame({
+    'lat': [-33.4313],
+    'lon': [-70.6454]
+})
+st.map(df)
