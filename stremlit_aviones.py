@@ -9,5 +9,5 @@ Original file is located at
 
 # prompt: creame un stremlit que pueda mostrar mi base de datos
 
-pf = pd.read_csv('STRIKE_REPORTS')
+pf = pd.read_csv('STRIKE_REPORTS.csv')
 pf
